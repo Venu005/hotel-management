@@ -1,11 +1,11 @@
 import { useForm } from "react-hook-form";
-import { useSignUp } from "./useSignUp";
+import { useSignup } from "./usesignup";
 import Form from "../../ui/Form";
 import FormRow from "../../ui/FormRow";
 import { Input } from "../../ui/Input";
 import Button from "../../ui/Button";
 function SignUpForm() {
-  const { signup, isSigningUp } = useSignUp();
+  const { signup, isSigningUp } = useSignup();
   const { register, formState, getValues, handleSubmit, reset } = useForm();
 
   const { errors } = formState;
